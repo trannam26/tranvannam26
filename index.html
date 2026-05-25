@@ -3,7 +3,7 @@
   <head>
     <meta charset="UTF-8" />
 
-    <title>NAM ĐẸP TRAI 😎</title>
+    <title>NAM ĐẸP TRAI </title>
 
     <style>
       body {
@@ -88,31 +88,29 @@
 
     <br />
 
-    <button onclick="convertURL()">MỞ FILE 😎</button>
+    <button onclick="convertURL()">MỞ FILE </button>
 
     <div id="result"></div>
 
     <script>
       function convertURL() {
         let url = document.getElementById("url").value;
-
-        // 😎 lấy ID
         let match = url.match(/(\d+)/);
 
         if (!match) {
-          alert("Link lỗi 😅");
+          alert("Link lỗi ");
 
           return;
         }
 
         let id = match[1];
 
-        // 😈 đổi link embeds
+        //  đổi link embeds
         let embed = `https://fr.scribd.com/embeds/${id}/content`;
 
         document.getElementById("result").innerHTML = `
 
-        <h3>LINK EMBED 😎</h3>
+        <h3>LINK EMBED </h3>
 
         <input
         value="${embed}"
@@ -131,7 +129,7 @@
 
         <div class="script-box">
 
-<b>📌 SAU KHI MỞ:</b>
+<b> SAU KHI MỞ:</b>
 
 <br><br>
 
@@ -147,7 +145,7 @@
 
 <br><br>
 
-4. paste đoạn này 😈
+4. paste đoạn này 
 
 <pre>
 
@@ -166,13 +164,13 @@ document.querySelectorAll(".toolbar_bottom")
 document.querySelectorAll(".qc-cmp2-container")
 .forEach(el => el.remove());
 
-console.log("DONE 😎");
+console.log("DONE ");
 
 </pre>
 
 <br>
 
-5. CTRL + P → Save PDF 😆🔥
+5. CTRL + P → Save PDF
 
         </div>
 
