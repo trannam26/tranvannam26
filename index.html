@@ -3,7 +3,7 @@
   <head>
     <meta charset="UTF-8" />
 
-    <title>NAM ĐẸP TRAI </title>
+    <title>NAM ĐẸP TRAI</title>
 
     <style>
       body {
@@ -82,19 +82,20 @@
   </head>
 
   <body>
-    <h2>dán url Scribd vào đây - 10k 1 lượt nhé  </h2>
+    <h2>dán url Scribd vào đây</h2>
 
     <input type="text" id="url" placeholder="dán link Scribd..." />
 
     <br />
 
-    <button onclick="convertURL()">MỞ FILE </button>
+    <button onclick="convertURL()">MỞ FILE</button>
 
     <div id="result"></div>
 
     <script>
       function convertURL() {
         let url = document.getElementById("url").value;
+
         let match = url.match(/(\d+)/);
 
         if (!match) {
@@ -105,12 +106,10 @@
 
         let id = match[1];
 
-        //  đổi link embeds
+        // 😈 đổi link embeds
         let embed = `https://fr.scribd.com/embeds/${id}/content`;
 
         document.getElementById("result").innerHTML = `
-
-        <h3>LINK EMBED </h3>
 
         <input
         value="${embed}"
@@ -126,52 +125,8 @@
             </button>
 
         </a>
-
-        <div class="script-box">
-
-<b> SAU KHI MỞ:</b>
-
-<br><br>
-
-1. kéo xuống cuối trang 😎
-
-<br><br>
-
-2. nhấn F12
-
-<br><br>
-
-3. vào Console
-
-<br><br>
-
-4. paste đoạn này 
-
-<pre>
-
-document.querySelectorAll(".toolbar_drop")
-.forEach(el => el.remove());
-
-document.querySelectorAll(".mobile_overlay")
-.forEach(el => el.remove());
-
-document.querySelectorAll(".toolbar_top")
-.forEach(el => el.remove());
-
-document.querySelectorAll(".toolbar_bottom")
-.forEach(el => el.remove());
-
-document.querySelectorAll(".qc-cmp2-container")
-.forEach(el => el.remove());
-
-console.log("DONE ");
-
 </pre>
-
 <br>
-
-5. CTRL + P → Save PDF
-
         </div>
 
     `;
